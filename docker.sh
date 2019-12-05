@@ -22,3 +22,7 @@ npm run image:push
 cd ../frontend
 npm run image:build
 npm run image:push
+
+cd ../insult
+npm run image:build
+npm run image:push
