@@ -10,9 +10,9 @@
     "deploy": "nodeshift --strictSSL=false --imageTag=12.x --expose",
     "start": "node .",
     "preimage:build": "npm install && npm run build",
-    "image:build": "docker build -t docker.io/lanceball/insults-frontend:v0.0.1 .",
-    "image:start": "docker run --rm -p8080:8080 docker.io/lanceball/insults-frontend:v0.0.1",
-    "image:push": "docker push docker.io/lanceball/insults-frontend:v0.0.1"
+    "image:build": "docker build -t docker.io/lholmquist/insults-frontend:v0.0.1 .",
+    "image:start": "docker run --rm -p8080:8080 docker.io/lholmquist/insults-frontend:v0.0.1",
+    "image:push": "docker push docker.io/lholmquist/insults-frontend:v0.0.1"
   },
   "repository": {
     "type": "git",
