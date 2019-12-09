@@ -7,7 +7,7 @@
     "pretest": "npm run lint",
     "lint": "semistandard test/*.js index.js",
     "release": "standard-version",
-    "deploy": "nodeshift --strictSSL=false --imageTag=12.x --expose",
+    "deploy": "npx nodeshift --expose",
     "start": "node .",
     "preimage:build": "npm install",
     "image:build": "docker build -t docker.io/lholmquist/insults-noun:v0.0.1 .",
