@@ -18,12 +18,13 @@ oc expose service frontend
 # kubectl expose deployment noun --port=8080 --target-port=8080 --type=NodePort
 # oc expose service noun
 
-# Go into the noun service and deploy using Nodeshift
-cd noun
-npm run deploy
+# Comment out for Node+js Interactive.  Do this step separately so if something goes wrong it doesn't hold things up
+# # Go into the noun service and deploy using Nodeshift
+# cd noun
+# npm run deploy
 
-# Go up to the project root, not really necesarry
-cd ..
+# # Go up to the project root, not really necesarry
+# cd ..
 
 export FRONTEND=http://`kubectl get route frontend -o jsonpath='{.spec.host}'`
 
